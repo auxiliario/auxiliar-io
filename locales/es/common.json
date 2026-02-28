@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "service": "Servicio",
+    "portfolio": "Portfolio",
+    "socialEconomy": "Econom\u00eda social",
+    "start": "Empezar",
+    "terms": "T\u00e9rminos"
+  },
+  "sectionNav": {
+    "guarantees": "Garant\u00edas",
+    "pricing": "Precios",
+    "howItWorks": "C\u00f3mo funciona",
+    "portfolioPreview": "Portfolio",
+    "whoThisIsFor": "Para qui\u00e9n es",
+    "waitlist": "Lista de espera",
+    "all": "Todo",
+    "basic": "Basic",
+    "standard": "Standard",
+    "advanced": "Avanzado",
+    "socialEconomy": "Econom\u00eda social",
+    "step1": "Paso 1",
+    "step2": "Paso 2",
+    "step3": "Paso 3",
+    "step4": "Paso 4",
+    "step5": "Paso 5"
+  },
+  "footer": {
+    "service": "Servicio",
+    "portfolio": "Portfolio",
+    "socialEconomy": "Econom\u00eda social",
+    "contact": "Contacto",
+    "terms": "T\u00e9rminos",
+    "privacy": "Privacidad",
+    "copyright": "Todos los derechos reservados."
+  },
+  "buttons": {
+    "getStarted": "Empezar",
+    "learnMore": "Saber m\u00e1s",
+    "viewAll": "Ver todo",
+    "submit": "Enviar",
+    "next": "Siguiente",
+    "back": "Volver",
+    "edit": "Editar"
+  },
+  "pages": {
+    "service": {
+      "title": "Servicio",
+      "subtitle": "Sitios web profesionales, a precios rid\u00edculamente bajos porque los hizo la IA."
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "subtitle": "Nuestros trabajos recientes."
+    },
+    "socialEconomy": {
+      "title": "Econom\u00eda social",
+      "subtitle": "Misma calidad, sin factura."
+    },
+    "start": {
+      "title": "Empezar",
+      "subtitle": "Cu\u00e9ntanos sobre tu proyecto."
+    },
+    "terms": {
+      "title": "T\u00e9rminos de servicio",
+      "subtitle": "La letra peque\u00f1a."
+    }
+  },
+  "meta": {
+    "siteTitle": "Auxiliar.io",
+    "siteDescription": "Sitios web profesionales, a precios rid\u00edculamente bajos porque los hizo la IA."
+  },
+  "accessibility": {
+    "switchToLight": "Cambiar a tema claro",
+    "switchToDark": "Cambiar a tema oscuro",
+    "switchLang": "Cambiar a",
+    "moreInfo": "M\u00e1s informaci\u00f3n"
+  }
+}

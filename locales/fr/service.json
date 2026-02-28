@@ -1,0 +1,153 @@
+{
+  "hero": {
+    "headline1": "Des sites web professionnels,",
+    "headline2": "des prix absurdement bas",
+    "headline3": "parce que c'est l'IA qui les a faits,",
+    "headline4": "vite",
+    "subtitle": "Remplissez un formulaire. Recevez votre soumission sur-le-champ. Premi\u00e8re \u00e9bauche en 7 jours. Satisfaction garantie ou argent remis, pas de questions.",
+    "cta": "Avoir votre soumission",
+    "note": "* Aucun paiement avant de voir votre soumission."
+  },
+  "guarantees": {
+    "title": "Garanties",
+    "items": [
+      {
+        "icon": "\u26a1",
+        "title": "Je suis rapide",
+        "description": "Premi\u00e8re \u00e9bauche en 7 jours. Le d\u00e9compte part au paiement."
+      },
+      {
+        "icon": "\ud83c\udfaf",
+        "title": "Vous avez ce que vous voulez",
+        "description": "3 rondes de r\u00e9visions, maximum 2 jours pour faire les r\u00e9visions. Autant de changements par ronde que vous voulez."
+      },
+      {
+        "icon": "\ud83d\udcb8",
+        "title": "Z\u00e9ro stress",
+        "description": "Satisfaction ou argent remis, n'importe quand avant l'approbation du site."
+      },
+      {
+        "icon": "\ud83d\ude80",
+        "title": "Vous \u00eates en ligne",
+        "description": "Site web en ligne en 2 semaines max si vous ne trainez pas sur les r\u00e9visions."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Tarifs",
+    "rows": {
+      "pages": "Pages",
+      "languages": "Langues",
+      "login": "Connexion",
+      "payment": "Paiement",
+      "booking": "R\u00e9servation",
+      "analytics": "Analytique",
+      "price": "Prix"
+    },
+    "cta": "Avoir une soumission",
+    "tiers": [
+      {
+        "name": "De base",
+        "highlight": true,
+        "pages": "1\u20133",
+        "languages": "1",
+        "login": "\u2014",
+        "payment": "\u2014",
+        "booking": "\u2014",
+        "analytics": "\u2014",
+        "price": "X\u2013XX $"
+      },
+      {
+        "name": "Standard",
+        "highlight": false,
+        "pages": "4\u20137",
+        "languages": "1\u20132",
+        "login": "\u2014",
+        "payment": "\u2014",
+        "booking": "\u2014",
+        "analytics": "\u2713",
+        "price": "XX\u2013XXX $"
+      },
+      {
+        "name": "Avanc\u00e9",
+        "highlight": false,
+        "pages": "4\u20137",
+        "languages": "2\u20133",
+        "login": "\u2713",
+        "payment": "\u2014",
+        "booking": "\u2014",
+        "analytics": "\u2713",
+        "price": "XXX\u2013XXX $"
+      },
+      {
+        "name": "Complexe",
+        "highlight": false,
+        "pages": "8+",
+        "languages": "3+",
+        "login": "\u2713",
+        "payment": "\u2713",
+        "booking": "\u2713",
+        "analytics": "\u2713",
+        "price": "max XXXX $"
+      }
+    ]
+  },
+  "howItWorks": {
+    "title": "Comment \u00e7a marche",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Remplissez le formulaire",
+        "description": "Parlez-nous de votre entreprise, votre style et vos besoins. \u00c0 peu pr\u00e8s 10 minutes."
+      },
+      {
+        "number": "02",
+        "title": "Recevez votre soumission",
+        "description": "Soumission instantan\u00e9e bas\u00e9e sur vos r\u00e9ponses. Pas de surprises, pas de frais cach\u00e9s."
+      },
+      {
+        "number": "03",
+        "title": "Premi\u00e8re \u00e9bauche",
+        "description": "Votre site web est b\u00e2ti et pr\u00eat pour r\u00e9vision dans les 7 jours apr\u00e8s le paiement."
+      },
+      {
+        "number": "04",
+        "title": "R\u00e9visions",
+        "description": "3 rondes de r\u00e9visions, 2 jours max chaque pour livrer. Autant de changements par ronde que vous voulez."
+      },
+      {
+        "number": "05",
+        "title": "Lancement",
+        "description": "On met votre site web en ligne. Le tout en 2 semaines max."
+      }
+    ]
+  },
+  "socialBanner": {
+    "title": "\u00c9conomie sociale",
+    "description": "Vous \u00eates une coop\u00e9rative, un OBNL ou un organisme communautaire? Je b\u00e2tis les m\u00eames sites web de qualit\u00e9 gratuitement \u2014 un projet \u00e0 la fois.",
+    "cta": "En savoir plus"
+  },
+  "portfolioPreview": {
+    "title": "Portfolio",
+    "viewAll": "Voir tout \u2192",
+    "items": [
+      {
+        "title": "\u00c0 venir",
+        "category": "De base"
+      },
+      {
+        "title": "\u00c0 venir",
+        "category": "Standard"
+      },
+      {
+        "title": "\u00c0 venir",
+        "category": "Avanc\u00e9"
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Pr\u00eat?",
+    "subtitle": "Remplissez le formulaire. Recevez votre soumission. Sans engagement.",
+    "cta": "Commencer"
+  }
+}

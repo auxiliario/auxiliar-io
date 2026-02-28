@@ -1,0 +1,79 @@
+{
+  "hero": {
+    "headline": "M\u00eame qualit\u00e9. Pas de facture.",
+    "subtitle": "Je b\u00e2tis des sites web pro bono pour les coop\u00e9ratives, OBNL et organismes communautaires en qui je crois."
+  },
+  "why": {
+    "title": "Pourquoi l'\u00e9conomie sociale?",
+    "paragraphs": [
+      "Je crois que le vrai changement structurel commence sur le terrain, dans les communaut\u00e9s. Pas seulement dans les documents de politique ou les promesses \u00e9lectorales, mais dans des actions concr\u00e8tes. Dans des exemples vivants qui d\u00e9montrent que l'\u00e9conomie sociale peut fonctionner, m\u00eame \u00e0 l'int\u00e9rieur d'un syst\u00e8me capitaliste. Que les coop\u00e9ratives, les OBNL et les organisations d\u00e9tenues par les travailleurs peuvent \u00eatre efficaces, agiles et constituer des alternatives compl\u00e9mentaires aux mod\u00e8les traditionnels, qu'ils soient publics ou priv\u00e9s.",
+      "Comme je le vois, l'\u00e9conomie sociale met les ressources l\u00e0 o\u00f9 elles ont le plus d'impact. Moins de frais administratifs inutiles, des structures plus proches du terrain, et une capacit\u00e9 d'adaptation plus rapide aux besoins r\u00e9els. Quand les gens prennent les choses en main \u2014 que ce soit \u00e0 travers une coop, un organisme communautaire ou un OBNL \u2014 on voit \u00e9merger des solutions ancr\u00e9es dans la r\u00e9alit\u00e9. Des personnes engag\u00e9es qui travaillent \u00e0 r\u00e9gler des enjeux concrets, avec une motivation qui vient du sens et de l'impact direct dans leur communaut\u00e9."
+    ]
+  },
+  "story": {
+    "title": "Le c\u00f4t\u00e9 personnel",
+    "paragraphs": [
+      "J'ai pass\u00e9 des ann\u00e9es \u00e0 faire de la pension et du b\u00e9n\u00e9volat pour des organismes de sauvetage de chiens \u2014 \u00e0 travailler chaque jour avec des chiens abus\u00e9s, n\u00e9glig\u00e9s ou \u00e0 risque d'euthanasie \u00e0 cause de probl\u00e8mes de comportement. Aujourd'hui, je d\u00e9marre un sanctuaire pour chiens en R\u00e9publique dominicaine.",
+      "Ce travail-l\u00e0 m'a appris une chose essentielle : les organismes qui font le vrai travail sur le terrain ont rarement les moyens d'investir dans des outils comme un site web ou des syst\u00e8mes num\u00e9riques efficaces, parce que chaque dollar et chaque heure sont consacr\u00e9s \u00e0 la mission. Et pourtant, ces outils-l\u00e0 pourraient multiplier leur impact."
+    ]
+  },
+  "closing": {
+    "quote": "Je b\u00e2tis avec l\u2019IA. Mes frais g\u00e9n\u00e9raux se r\u00e9sument \u00e0 du caf\u00e9. \u00c7a veut dire que je peux donner mon temps \u00e0 des organismes qui font un travail qui compte \u2014 un projet \u00e0 la fois, m\u00eame qualit\u00e9, pas de facture."
+  },
+  "toolkit": {
+    "title": "Ce que je peux faire pour vous",
+    "subtitle": "Les m\u00eames outils que je b\u00e2tis pour mes clients payants \u2014 configur\u00e9s et d\u00e9ploy\u00e9s pour votre organisme.",
+    "items": [
+      { "name": "Site web", "tooltip": "Un site web complet b\u00e2ti au m\u00eame standard que les projets payants \u2014 responsive, rapide, accessible." },
+      { "name": "CRM", "tooltip": "Un syst\u00e8me de gestion de contacts pour suivre les membres, donateurs, b\u00e9n\u00e9voles et les communications." },
+      { "name": "Page de dons", "tooltip": "Une page de dons s\u00e9curis\u00e9e avec Stripe, options r\u00e9currentes et g\u00e9n\u00e9ration de re\u00e7us fiscaux." },
+      { "name": "Infolettre", "tooltip": "Mise en place de campagnes courriel \u2014 gabarits, gestion des abonn\u00e9s et envois automatis\u00e9s." },
+      { "name": "R\u00e9servation", "tooltip": "Un syst\u00e8me de prise de rendez-vous ou de r\u00e9servation d\u2019\u00e9v\u00e9nements pour votre \u00e9quipe ou votre communaut\u00e9." },
+      { "name": "Gestion des b\u00e9n\u00e9voles", "tooltip": "Un syst\u00e8me pour inscrire, suivre et communiquer avec vos b\u00e9n\u00e9voles." },
+      { "name": "Pages d\u2019\u00e9v\u00e9nements", "tooltip": "Des pages d\u2019\u00e9v\u00e9nements d\u00e9di\u00e9es avec d\u00e9tails, inscription et rappels." },
+      { "name": "Formulaires", "tooltip": "Des formulaires sur mesure pour les demandes, sondages, commentaires ou processus d\u2019admission." },
+      { "name": "Partage de documents", "tooltip": "Un portail s\u00e9curis\u00e9 pour partager des documents avec les membres ou parties prenantes." },
+      { "name": "R\u00e9seaux sociaux", "tooltip": "Connectez vos fils sociaux, ajoutez des boutons de partage et int\u00e9grez du contenu." },
+      { "name": "Analytique", "tooltip": "Suivez les visites, conversions et l\u2019engagement pour savoir ce qui marche." }
+    ]
+  },
+  "howItWorks": {
+    "title": "Comment \u00e7a marche",
+    "steps": [
+      { "title": "Un \u00e0 la fois", "description": "Je prends un seul projet d\u2019\u00e9conomie sociale \u00e0 la fois. Vous avez toute mon attention, pas un travail b\u00e2cl\u00e9 en parall\u00e8le." },
+      { "title": "Entre les projets payants", "description": "Le travail d\u2019\u00e9conomie sociale se fait entre les clients payants. Il n\u2019y a pas d\u2019\u00e9ch\u00e9ancier fixe \u2014 mais il n\u2019y a pas de raccourci non plus." },
+      { "title": "M\u00eame qualit\u00e9", "description": "Vous avez le m\u00eame stack, les m\u00eames standards et le m\u00eame processus de r\u00e9vision que les clients payants. La seule diff\u00e9rence, c\u2019est la facture." },
+      { "title": "Peut \u00eatre complexe", "description": "C\u2019est pas limit\u00e9 aux sites web simples. Si votre organisme a besoin d\u2019un CRM, d\u2019une page de dons ou d\u2019un portail multilingue \u2014 on le b\u00e2tit." }
+    ]
+  },
+  "whoThisIsFor": {
+    "title": "C\u2019est pour qui",
+    "description": "C\u2019est pour les coop\u00e9ratives, OBNL, organismes de bienfaisance et organismes communautaires qui font des projets en lesquels je crois. Pas tout le monde est admissible \u2014 je choisis les projets o\u00f9 je pense que le travail va vraiment faire une diff\u00e9rence.",
+    "types": [
+      { "name": "Coop\u00e9ratives", "description": "Des organisations d\u00e9tenues par les travailleurs, ax\u00e9es sur la communaut\u00e9, qui cr\u00e9ent de la valeur partag\u00e9e." },
+      { "name": "OBNL", "description": "Des organismes l\u00e9gers qui livrent un impact direct sans la lourdeur bureaucratique." },
+      { "name": "Organismes de bienfaisance", "description": "Des organismes enregistr\u00e9s qui font un travail concret et mesurable dans leurs communaut\u00e9s." },
+      { "name": "Organismes communautaires", "description": "Des groupes locaux qui r\u00e8glent de vrais probl\u00e8mes \u2014 sauvetage animal, entraide, projets de quartier." }
+    ]
+  },
+  "currentProject": {
+    "title": "Projet en cours",
+    "placeholder": "Pas de projet actif en ce moment. Soumettez votre organisme ici et vous pourriez \u00eatre le prochain.",
+    "comingSoon": "D\u00e9tails \u00e0 venir."
+  },
+  "waitlist": {
+    "title": "Inscrivez-vous \u00e0 la liste d\u2019attente",
+    "description": "Parlez-moi de votre organisme et de vos besoins. Je vais regarder votre demande et vous dire quand je pourrai commencer.",
+    "orgName": "Nom de l\u2019organisme",
+    "orgNamePlaceholder": "ex. Sauvetage Animal Soleil",
+    "orgType": "Type d\u2019organisme",
+    "orgTypePlaceholder": "ex. OBNL, Coop\u00e9rative, etc.",
+    "email": "Courriel de contact",
+    "emailPlaceholder": "vous@organisme.org",
+    "message": "De quoi avez-vous besoin?",
+    "messagePlaceholder": "D\u00e9crivez votre organisme et le projet que vous avez en t\u00eate. Plus c\u2019est d\u00e9taill\u00e9, mieux c\u2019est.",
+    "submit": "Envoyer \u00e0 la liste d\u2019attente",
+    "submitted": "Merci! Je vais regarder votre soumission et je vous reviens."
+  },
+  "moreInfo": "Plus d\u2019infos"
+}

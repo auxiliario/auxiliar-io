@@ -1,0 +1,74 @@
+{
+  "title": "Portfolio",
+  "subtitle": "Real sites built for real businesses. Each one starts as a 10-minute form and goes live in under 2 weeks.",
+  "filters": {
+    "all": "All",
+    "basic": "Basic",
+    "standard": "Standard",
+    "advanced": "Advanced",
+    "socialEconomy": "Social economy"
+  },
+  "labels": {
+    "pages": "{count} page",
+    "pagesPlural": "{count} pages",
+    "languages": "{count} language",
+    "languagesPlural": "{count} languages",
+    "socialEconomy": "Social economy"
+  },
+  "projects": [
+    {
+      "name": "Sunrise Bakery",
+      "type": "Restaurant / Café",
+      "tier": "basic",
+      "pageCount": 3,
+      "languageCount": 1,
+      "languages": ["EN"],
+      "description": "A warm, inviting single-page site with menu, about section, and contact info."
+    },
+    {
+      "name": "Apex Consulting",
+      "type": "Professional services",
+      "tier": "standard",
+      "pageCount": 5,
+      "languageCount": 2,
+      "languages": ["EN", "FR"],
+      "description": "A bilingual corporate site with team profiles, services breakdown, and analytics."
+    },
+    {
+      "name": "Studio Margaux",
+      "type": "Creative / Design",
+      "tier": "basic",
+      "pageCount": 2,
+      "languageCount": 1,
+      "languages": ["FR"],
+      "description": "A minimalist portfolio site showcasing photography and design work."
+    },
+    {
+      "name": "Vitalis Health",
+      "type": "Health / Wellness",
+      "tier": "advanced",
+      "pageCount": 6,
+      "languageCount": 3,
+      "languages": ["EN", "FR", "ES"],
+      "description": "A multi-language wellness platform with client login, booking integration, and analytics."
+    },
+    {
+      "name": "Coop Solidaire",
+      "type": "Cooperative",
+      "tier": "social-economy",
+      "pageCount": 4,
+      "languageCount": 2,
+      "languages": ["FR", "EN"],
+      "description": "A bilingual site for a worker-owned cooperative with volunteer management and donation page."
+    },
+    {
+      "name": "Madera Trades",
+      "type": "Construction / Trades",
+      "tier": "standard",
+      "pageCount": 4,
+      "languageCount": 1,
+      "languages": ["EN"],
+      "description": "A project showcase with gallery, service areas, and quote request form."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+.zone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 2rem;
+  min-height: 120px;
+  border: 2px dashed var(--input-border);
+  border-radius: 10px;
+  background: var(--input-bg);
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.zone:hover {
+  border-color: var(--accent);
+  background: var(--bg-elevated);
+}
+
+.dragOver {
+  border-color: var(--accent);
+  background: var(--bg-elevated);
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  color: var(--text-muted);
+}
+
+.text {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.subtext {
+  font-size: 0.8125rem;
+  color: var(--text-faint);
+}
+
+.input {
+  display: none;
+}

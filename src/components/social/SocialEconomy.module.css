@@ -1,0 +1,232 @@
+/* ============================================
+   Social Economy Page
+   ============================================ */
+
+.page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ---- Hero ---- */
+.hero {
+  text-align: center;
+  padding: 5rem 0 3rem;
+}
+
+.heroHeadline {
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--social-accent);
+  margin-bottom: 1.25rem;
+}
+
+.heroSubtitle {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  max-width: 560px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ---- Shared section ---- */
+.section {
+  padding: 3rem 0;
+}
+
+.sectionTitle {
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 1.25rem;
+}
+
+.sectionSubtitle {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 640px;
+}
+
+/* ---- Prose (Why / Story) ---- */
+.prose {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.prose p {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* ---- Closing quote ---- */
+.closingSection {
+  padding: 2rem 0 3rem;
+}
+
+.closingQuote {
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-size: 1.375rem;
+  font-style: italic;
+  color: var(--social-accent);
+  line-height: 1.6;
+  border-left: 3px solid var(--social-accent);
+  padding-left: 1.5rem;
+  margin: 0;
+  max-width: 640px;
+}
+
+/* ---- Toolkit ---- */
+.toolkitGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
+.toolCard {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 1.25rem;
+  background: var(--social-bg);
+  border: 1px solid rgba(74, 222, 128, 0.12);
+  border-radius: 10px;
+}
+
+.toolName {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+/* ---- How it works ---- */
+.stepsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.stepCard {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.stepTitle {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.stepDesc {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* ---- Who this is for ---- */
+.typesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.typeCard {
+  background: var(--social-bg);
+  border: 1px solid rgba(74, 222, 128, 0.12);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.typeName {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--social-accent);
+  margin-bottom: 0.5rem;
+}
+
+.typeDesc {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* ---- Currently working on ---- */
+.currentCard {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.currentPlaceholder {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* ---- Waitlist ---- */
+.waitlistSection {
+  padding: 4rem 0 6rem;
+  border-top: 1px solid var(--border);
+}
+
+.waitlistForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 560px;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.submittedMsg {
+  padding: 1.5rem;
+  background: var(--social-bg);
+  border: 1px solid rgba(74, 222, 128, 0.2);
+  border-radius: 12px;
+  color: var(--social-accent);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  max-width: 560px;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .toolkitGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stepsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .typesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .toolkitGrid {
+    grid-template-columns: 1fr;
+  }
+}

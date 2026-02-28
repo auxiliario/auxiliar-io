@@ -1,0 +1,54 @@
+/* ============================================
+   Theme Variables — Dark (default) & Light
+   ============================================ */
+
+:root,
+[data-theme='dark'] {
+  --bg: #0a0a0a;
+  --bg-elevated: #111;
+  --card: #111;
+  --card-hover: #161616;
+  --border: #1a1a1a;
+  --border-strong: #222;
+  --text: #fafafa;
+  --text-secondary: #888;
+  --text-muted: #666;
+  --text-faint: #555;
+  --accent: #4ade80;
+  --accent-hover: #22c55e;
+  --accent-gradient: linear-gradient(135deg, #4ade80, #22d3ee);
+  --social-bg: #162316;
+  --social-accent: #4ade80;
+  --input-bg: #111;
+  --input-border: #222;
+  --input-focus: #4ade80;
+  --overlay: rgba(0, 0, 0, 0.6);
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 4px 12px rgba(0, 0, 0, 0.5);
+  color-scheme: dark;
+}
+
+[data-theme='light'] {
+  --bg: #fafaf8;
+  --bg-elevated: #fff;
+  --card: #fff;
+  --card-hover: #f5f5f3;
+  --border: #e5e5e0;
+  --border-strong: #d4d4cf;
+  --text: #1a1a1a;
+  --text-secondary: #555;
+  --text-muted: #777;
+  --text-faint: #999;
+  --accent: #16a34a;
+  --accent-hover: #15803d;
+  --accent-gradient: linear-gradient(135deg, #16a34a, #0891b2);
+  --social-bg: #ecfdf5;
+  --social-accent: #16a34a;
+  --input-bg: #fff;
+  --input-border: #d4d4cf;
+  --input-focus: #16a34a;
+  --overlay: rgba(0, 0, 0, 0.3);
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color-scheme: light;
+}

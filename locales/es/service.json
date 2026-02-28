@@ -1,0 +1,153 @@
+{
+  "hero": {
+    "headline1": "Sitios web profesionales,",
+    "headline2": "precios rid\u00edculamente bajos",
+    "headline3": "porque los hizo la IA,",
+    "headline4": "r\u00e1pido",
+    "subtitle": "Completa un formulario. Obt\u00e9n un presupuesto instant\u00e1neo. Primer borrador en 7 d\u00edas. Garant\u00eda de devoluci\u00f3n, sin preguntas.",
+    "cta": "Obt\u00e9n tu presupuesto",
+    "note": "* Sin pago hasta ver tu presupuesto."
+  },
+  "guarantees": {
+    "title": "Garant\u00edas",
+    "items": [
+      {
+        "icon": "\u26a1",
+        "title": "Soy r\u00e1pido",
+        "description": "Primer borrador en 7 d\u00edas. La cuenta regresiva empieza con el pago."
+      },
+      {
+        "icon": "\ud83c\udfaf",
+        "title": "Obt\u00e9n lo que quieres",
+        "description": "3 rondas de revisiones, 2 d\u00edas m\u00e1ximo cada una para entregar. Tantos cambios por ronda como quieras."
+      },
+      {
+        "icon": "\ud83d\udcb8",
+        "title": "Sin estr\u00e9s",
+        "description": "Garant\u00eda de devoluci\u00f3n en cualquier momento antes de aprobar el sitio."
+      },
+      {
+        "icon": "\ud83d\ude80",
+        "title": "Est\u00e1s en la web",
+        "description": "Sitio en l\u00ednea en 2 semanas m\u00e1ximo si no tardas con las revisiones."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Precios",
+    "rows": {
+      "pages": "P\u00e1ginas",
+      "languages": "Idiomas",
+      "login": "Login",
+      "payment": "Pago",
+      "booking": "Reservas",
+      "analytics": "Anal\u00edtica",
+      "price": "Precio"
+    },
+    "cta": "Pedir presupuesto",
+    "tiers": [
+      {
+        "name": "B\u00e1sico",
+        "highlight": true,
+        "pages": "1\u20133",
+        "languages": "1",
+        "login": "\u2014",
+        "payment": "\u2014",
+        "booking": "\u2014",
+        "analytics": "\u2014",
+        "price": "$X\u2013$XX"
+      },
+      {
+        "name": "Est\u00e1ndar",
+        "highlight": false,
+        "pages": "4\u20137",
+        "languages": "1\u20132",
+        "login": "\u2014",
+        "payment": "\u2014",
+        "booking": "\u2014",
+        "analytics": "\u2713",
+        "price": "$XX\u2013$XXX"
+      },
+      {
+        "name": "Avanzado",
+        "highlight": false,
+        "pages": "4\u20137",
+        "languages": "2\u20133",
+        "login": "\u2713",
+        "payment": "\u2014",
+        "booking": "\u2014",
+        "analytics": "\u2713",
+        "price": "$XXX\u2013$XXX"
+      },
+      {
+        "name": "Complejo",
+        "highlight": false,
+        "pages": "8+",
+        "languages": "3+",
+        "login": "\u2713",
+        "payment": "\u2713",
+        "booking": "\u2713",
+        "analytics": "\u2713",
+        "price": "max $XXXX"
+      }
+    ]
+  },
+  "howItWorks": {
+    "title": "C\u00f3mo funciona",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Completa el formulario",
+        "description": "Cu\u00e9ntanos sobre tu negocio, tu estilo y lo que necesitas. Unos 10 minutos."
+      },
+      {
+        "number": "02",
+        "title": "Obt\u00e9n tu presupuesto",
+        "description": "Presupuesto instant\u00e1neo basado en tus respuestas. Sin sorpresas ni costos ocultos."
+      },
+      {
+        "number": "03",
+        "title": "Primer borrador",
+        "description": "Tu sitio est\u00e1 construido y listo para revisi\u00f3n en 7 d\u00edas desde el pago."
+      },
+      {
+        "number": "04",
+        "title": "Revisiones",
+        "description": "3 rondas de revisiones, 2 d\u00edas m\u00e1ximo cada una para entregar. Tantos cambios por ronda como quieras."
+      },
+      {
+        "number": "05",
+        "title": "Lanzamiento",
+        "description": "Publicamos tu sitio. Est\u00e1s en l\u00ednea. Todo el proceso toma 2 semanas m\u00e1ximo."
+      }
+    ]
+  },
+  "socialBanner": {
+    "title": "Econom\u00eda social",
+    "description": "\u00bfEres una cooperativa, una organizaci\u00f3n sin fines de lucro o una organizaci\u00f3n comunitaria? Construyo los mismos sitios de calidad gratis \u2014 un proyecto a la vez.",
+    "cta": "Saber m\u00e1s"
+  },
+  "portfolioPreview": {
+    "title": "Portfolio",
+    "viewAll": "Ver todo \u2192",
+    "items": [
+      {
+        "title": "Pr\u00f3ximamente",
+        "category": "B\u00e1sico"
+      },
+      {
+        "title": "Pr\u00f3ximamente",
+        "category": "Est\u00e1ndar"
+      },
+      {
+        "title": "Pr\u00f3ximamente",
+        "category": "Avanzado"
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "\u00bfListo?",
+    "subtitle": "Completa el formulario. Obt\u00e9n tu presupuesto. Sin compromiso.",
+    "cta": "Empezar"
+  }
+}

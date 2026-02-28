@@ -1,0 +1,1 @@
+// PortfolioPreview component — placeholder

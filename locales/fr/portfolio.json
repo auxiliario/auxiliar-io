@@ -1,0 +1,74 @@
+{
+  "title": "Portfolio",
+  "subtitle": "De vrais sites web b\u00e2tis pour de vraies entreprises. Chacun commence par un formulaire de 10 minutes et est en ligne en moins de 2 semaines.",
+  "filters": {
+    "all": "Tous",
+    "basic": "Basic",
+    "standard": "Standard",
+    "advanced": "Advanced",
+    "socialEconomy": "\u00c9conomie sociale"
+  },
+  "labels": {
+    "pages": "{count} page",
+    "pagesPlural": "{count} pages",
+    "languages": "{count} langue",
+    "languagesPlural": "{count} langues",
+    "socialEconomy": "\u00c9conomie sociale"
+  },
+  "projects": [
+    {
+      "name": "Boulangerie du Soleil",
+      "type": "Restaurant / Caf\u00e9",
+      "tier": "basic",
+      "pageCount": 3,
+      "languageCount": 1,
+      "languages": ["EN"],
+      "description": "Un site web chaleureux d\u2019une page avec menu, section \u00e0 propos et coordonn\u00e9es."
+    },
+    {
+      "name": "Apex Consulting",
+      "type": "Services professionnels",
+      "tier": "standard",
+      "pageCount": 5,
+      "languageCount": 2,
+      "languages": ["EN", "FR"],
+      "description": "Un site web corporatif bilingue avec profils d\u2019\u00e9quipe, d\u00e9tail des services et analytique."
+    },
+    {
+      "name": "Studio Margaux",
+      "type": "Cr\u00e9ation / Design",
+      "tier": "basic",
+      "pageCount": 2,
+      "languageCount": 1,
+      "languages": ["FR"],
+      "description": "Un site web portfolio minimaliste mettant en valeur la photographie et le design."
+    },
+    {
+      "name": "Vitalis Sant\u00e9",
+      "type": "Sant\u00e9 / Bien-\u00eatre",
+      "tier": "advanced",
+      "pageCount": 6,
+      "languageCount": 3,
+      "languages": ["EN", "FR", "ES"],
+      "description": "Une plateforme bien-\u00eatre multilingue avec connexion client, r\u00e9servation et analytique."
+    },
+    {
+      "name": "Coop Solidaire",
+      "type": "Coop\u00e9rative",
+      "tier": "social-economy",
+      "pageCount": 4,
+      "languageCount": 2,
+      "languages": ["FR", "EN"],
+      "description": "Un site web bilingue pour une coop\u00e9rative de travailleurs avec gestion de b\u00e9n\u00e9voles et page de dons."
+    },
+    {
+      "name": "Madera Construction",
+      "type": "Construction / M\u00e9tiers",
+      "tier": "standard",
+      "pageCount": 4,
+      "languageCount": 1,
+      "languages": ["EN"],
+      "description": "Un site web vitrine avec galerie de projets, zones de service et formulaire de soumission."
+    }
+  ]
+}

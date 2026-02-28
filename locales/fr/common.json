@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "service": "Service",
+    "portfolio": "Portfolio",
+    "socialEconomy": "\u00c9conomie sociale",
+    "start": "Commencer",
+    "terms": "Conditions"
+  },
+  "sectionNav": {
+    "guarantees": "Garanties",
+    "pricing": "Tarifs",
+    "howItWorks": "Comment \u00e7a marche",
+    "portfolioPreview": "Portfolio",
+    "whoThisIsFor": "C\u2019est pour qui",
+    "waitlist": "Liste d\u2019attente",
+    "all": "Tous",
+    "basic": "Basic",
+    "standard": "Standard",
+    "advanced": "Avanc\u00e9",
+    "socialEconomy": "\u00c9conomie sociale",
+    "step1": "\u00c9tape 1",
+    "step2": "\u00c9tape 2",
+    "step3": "\u00c9tape 3",
+    "step4": "\u00c9tape 4",
+    "step5": "\u00c9tape 5"
+  },
+  "footer": {
+    "service": "Service",
+    "portfolio": "Portfolio",
+    "socialEconomy": "\u00c9conomie sociale",
+    "contact": "Contact",
+    "terms": "Conditions",
+    "privacy": "Confidentialit\u00e9",
+    "copyright": "Tous droits r\u00e9serv\u00e9s."
+  },
+  "buttons": {
+    "getStarted": "Commencer",
+    "learnMore": "En savoir plus",
+    "viewAll": "Voir tout",
+    "submit": "Envoyer",
+    "next": "Suivant",
+    "back": "Retour",
+    "edit": "Modifier"
+  },
+  "pages": {
+    "service": {
+      "title": "Service",
+      "subtitle": "Des sites web professionnels, \u00e0 des prix g\u00eanants parce que c\u2019est l\u2019IA qui les a faits."
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "subtitle": "Nos r\u00e9alisations r\u00e9centes."
+    },
+    "socialEconomy": {
+      "title": "\u00c9conomie sociale",
+      "subtitle": "M\u00eame qualit\u00e9, pas de facture."
+    },
+    "start": {
+      "title": "Commencer",
+      "subtitle": "Parlez-nous de votre projet."
+    },
+    "terms": {
+      "title": "Conditions d\u2019utilisation",
+      "subtitle": "Les petits caract\u00e8res."
+    }
+  },
+  "meta": {
+    "siteTitle": "Auxiliar.io",
+    "siteDescription": "Des sites web professionnels, \u00e0 des prix g\u00eanants parce que c\u2019est l\u2019IA qui les a faits."
+  },
+  "accessibility": {
+    "switchToLight": "Passer au th\u00e8me clair",
+    "switchToDark": "Passer au th\u00e8me sombre",
+    "switchLang": "Passer \u00e0",
+    "moreInfo": "Plus d\u2019infos"
+  }
+}

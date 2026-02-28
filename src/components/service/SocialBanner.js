@@ -1,0 +1,1 @@
+// SocialBanner component — placeholder

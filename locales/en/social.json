@@ -1,0 +1,79 @@
+{
+  "hero": {
+    "headline": "Same quality. No invoice.",
+    "subtitle": "I build pro bono sites for cooperatives, non-profits, and community organizations I believe in."
+  },
+  "why": {
+    "title": "Why social economy?",
+    "paragraphs": [
+      "I believe real structural change starts on the ground, within communities. Not only in policy documents or campaign promises, but in concrete action. In living examples that show the social economy can work, even within a capitalist system. That cooperatives, nonprofits, and worker-owned organizations can be efficient, agile, and serve as complementary alternatives to traditional public or private models.",
+      "As I see it, the social economy directs resources where they have the greatest impact. Fewer unnecessary administrative costs, structures that stay close to the community, and a stronger ability to adapt to real needs. When people take ownership \u2014 whether through a co-op, a community organization, or a nonprofit \u2014 solutions emerge that are rooted in reality. Committed individuals working to address concrete challenges, driven by purpose and direct impact in their communities."
+    ]
+  },
+  "story": {
+    "title": "The personal part",
+    "paragraphs": [
+      "I spent years fostering and volunteering with dog rescue organizations \u2014 working every day with dogs who were abused, neglected, or at risk of euthanasia due to behavioral issues. Today, I am starting a dog sanctuary in the Dominican Republic.",
+      "That work taught me something essential: the organizations doing the real, hands-on work in their communities rarely have the capacity to invest in tools like a proper website or effective digital systems, because every dollar and every hour goes directly to the mission. And yet, those very tools could significantly multiply their impact."
+    ]
+  },
+  "closing": {
+    "quote": "I build with AI. My overhead is basically coffee. That means I can give my time to organizations doing work that matters — one project at a time, same quality, no invoice."
+  },
+  "toolkit": {
+    "title": "What I can help with",
+    "subtitle": "The same tools I build for paying clients — configured and deployed for your organization.",
+    "items": [
+      { "name": "Website", "tooltip": "A full site built to the same standard as paid projects — responsive, fast, accessible." },
+      { "name": "CRM", "tooltip": "A contact management system to track members, donors, volunteers, and communications." },
+      { "name": "Donation page", "tooltip": "A secure online donation page with Stripe, recurring options, and tax receipt generation." },
+      { "name": "Newsletter", "tooltip": "Email campaign setup — templates, subscriber management, and automated sends." },
+      { "name": "Booking / Scheduling", "tooltip": "An appointment or event booking system for your team or your community." },
+      { "name": "Volunteer management", "tooltip": "A system to register, track, and communicate with your volunteers." },
+      { "name": "Event pages", "tooltip": "Dedicated event pages with details, registration, and reminders." },
+      { "name": "Forms / Intake", "tooltip": "Custom forms for applications, surveys, feedback, or intake processes." },
+      { "name": "Document sharing", "tooltip": "A secure portal for sharing documents with members or stakeholders." },
+      { "name": "Social media integration", "tooltip": "Connect your social feeds, add sharing buttons, and embed content." },
+      { "name": "Analytics", "tooltip": "Track visits, conversions, and engagement so you know what's working." }
+    ]
+  },
+  "howItWorks": {
+    "title": "How it works",
+    "steps": [
+      { "title": "One at a time", "description": "I take on one social economy project at a time. You get my full attention, not a rushed side job." },
+      { "title": "Between paid projects", "description": "Social economy work happens between paying clients. There's no fixed timeline — but there's no shortcut either." },
+      { "title": "Same quality", "description": "You get the same stack, the same standards, and the same revision process as paid clients. The only difference is the invoice." },
+      { "title": "Can be complex", "description": "This isn't limited to simple sites. If your organization needs a CRM, a donation page, or a multi-language portal — we'll build it." }
+    ]
+  },
+  "whoThisIsFor": {
+    "title": "Who this is for",
+    "description": "This is for cooperatives, non-profits, charities, and community organizations doing projects I believe in. Not everyone qualifies — I pick projects where I think the work will actually make a difference.",
+    "types": [
+      { "name": "Cooperatives", "description": "Worker-owned, community-driven organizations building shared value." },
+      { "name": "Non-profits", "description": "Lean organizations delivering direct impact without the bureaucratic overhead." },
+      { "name": "Charities", "description": "Registered charities doing concrete, measurable work in their communities." },
+      { "name": "Community organizations", "description": "Local groups solving real problems — animal rescue, mutual aid, neighborhood projects." }
+    ]
+  },
+  "currentProject": {
+    "title": "Currently working on",
+    "placeholder": "No active project right now. Submit your organization below and you could be next.",
+    "comingSoon": "Details coming soon."
+  },
+  "waitlist": {
+    "title": "Get on the waitlist",
+    "description": "Tell me about your organization and what you need. I'll review it and let you know when I can start working on it.",
+    "orgName": "Organization name",
+    "orgNamePlaceholder": "e.g. Sunrise Animal Rescue",
+    "orgType": "Type of organization",
+    "orgTypePlaceholder": "e.g. Non-profit, Cooperative, etc.",
+    "email": "Contact email",
+    "emailPlaceholder": "you@organization.org",
+    "message": "What do you need?",
+    "messagePlaceholder": "Describe your organization and the project you have in mind. The more detail, the better.",
+    "submit": "Submit to waitlist",
+    "submitted": "Thanks! I'll review your submission and get back to you."
+  },
+  "moreInfo": "More info"
+}

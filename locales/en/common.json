@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "service": "Service",
+    "portfolio": "Portfolio",
+    "socialEconomy": "Social Economy",
+    "start": "Start",
+    "terms": "Terms"
+  },
+  "sectionNav": {
+    "guarantees": "Guarantees",
+    "pricing": "Pricing",
+    "howItWorks": "How it works",
+    "portfolioPreview": "Portfolio",
+    "whoThisIsFor": "Who this is for",
+    "waitlist": "Waitlist",
+    "all": "All",
+    "basic": "Basic",
+    "standard": "Standard",
+    "advanced": "Advanced",
+    "socialEconomy": "Social economy",
+    "step1": "Step 1",
+    "step2": "Step 2",
+    "step3": "Step 3",
+    "step4": "Step 4",
+    "step5": "Step 5"
+  },
+  "footer": {
+    "service": "Service",
+    "portfolio": "Portfolio",
+    "socialEconomy": "Social Economy",
+    "contact": "Contact",
+    "terms": "Terms",
+    "privacy": "Privacy",
+    "copyright": "All rights reserved."
+  },
+  "buttons": {
+    "getStarted": "Get started",
+    "learnMore": "Learn more",
+    "viewAll": "View all",
+    "submit": "Submit",
+    "next": "Next",
+    "back": "Back",
+    "edit": "Edit"
+  },
+  "pages": {
+    "service": {
+      "title": "Service",
+      "subtitle": "Professional websites, embarrassingly low prices because AI did it."
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "subtitle": "Our recent work."
+    },
+    "socialEconomy": {
+      "title": "Social Economy",
+      "subtitle": "Same quality, no invoice."
+    },
+    "start": {
+      "title": "Get Started",
+      "subtitle": "Tell us about your project."
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "subtitle": "The fine print."
+    }
+  },
+  "meta": {
+    "siteTitle": "Auxiliar.io",
+    "siteDescription": "Professional websites, embarrassingly low prices because AI did it."
+  },
+  "accessibility": {
+    "switchToLight": "Switch to light theme",
+    "switchToDark": "Switch to dark theme",
+    "switchLang": "Switch to",
+    "moreInfo": "More info"
+  }
+}

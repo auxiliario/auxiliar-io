@@ -1,0 +1,74 @@
+{
+  "title": "Portafolio",
+  "subtitle": "Sitios reales construidos para negocios reales. Cada uno empieza con un formulario de 10 minutos y está en línea en menos de 2 semanas.",
+  "filters": {
+    "all": "Todos",
+    "basic": "Basic",
+    "standard": "Standard",
+    "advanced": "Advanced",
+    "socialEconomy": "Economía social"
+  },
+  "labels": {
+    "pages": "{count} página",
+    "pagesPlural": "{count} páginas",
+    "languages": "{count} idioma",
+    "languagesPlural": "{count} idiomas",
+    "socialEconomy": "Economía social"
+  },
+  "projects": [
+    {
+      "name": "Panadería Amanecer",
+      "type": "Restaurante / Café",
+      "tier": "basic",
+      "pageCount": 3,
+      "languageCount": 1,
+      "languages": ["EN"],
+      "description": "Un sitio cálido de una página con menú, sección sobre nosotros e información de contacto."
+    },
+    {
+      "name": "Apex Consulting",
+      "type": "Servicios profesionales",
+      "tier": "standard",
+      "pageCount": 5,
+      "languageCount": 2,
+      "languages": ["EN", "FR"],
+      "description": "Un sitio corporativo bilingüe con perfiles de equipo, desglose de servicios y analítica."
+    },
+    {
+      "name": "Studio Margaux",
+      "type": "Creativo / Diseño",
+      "tier": "basic",
+      "pageCount": 2,
+      "languageCount": 1,
+      "languages": ["FR"],
+      "description": "Un sitio portafolio minimalista que muestra fotografía y diseño."
+    },
+    {
+      "name": "Vitalis Salud",
+      "type": "Salud / Bienestar",
+      "tier": "advanced",
+      "pageCount": 6,
+      "languageCount": 3,
+      "languages": ["EN", "FR", "ES"],
+      "description": "Una plataforma de bienestar multilingüe con login de clientes, reservas y analítica."
+    },
+    {
+      "name": "Coop Solidaria",
+      "type": "Cooperativa",
+      "tier": "social-economy",
+      "pageCount": 4,
+      "languageCount": 2,
+      "languages": ["FR", "EN"],
+      "description": "Un sitio bilingüe para una cooperativa de trabajadores con gestión de voluntarios y página de donaciones."
+    },
+    {
+      "name": "Madera Construcción",
+      "type": "Construcción / Oficios",
+      "tier": "standard",
+      "pageCount": 4,
+      "languageCount": 1,
+      "languages": ["EN"],
+      "description": "Un sitio vitrina con galería de proyectos, áreas de servicio y formulario de presupuesto."
+    }
+  ]
+}

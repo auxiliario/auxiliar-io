@@ -1,0 +1,44 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--bg);
+  transition: background 0.2s ease;
+}
+
+/* Row 1 */
+.row1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.875rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.logo {
+  font-family: 'DM Mono', monospace;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.logo:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.rightGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Row 2 */
+.row2 {
+  border-bottom: 1px solid var(--border);
+  padding: 0 1.5rem;
+}

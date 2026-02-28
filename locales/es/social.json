@@ -1,0 +1,79 @@
+{
+  "hero": {
+    "headline": "Misma calidad. Sin factura.",
+    "subtitle": "Construyo sitios pro bono para cooperativas, organizaciones sin fines de lucro y comunitarias en las que creo."
+  },
+  "why": {
+    "title": "\u00bfPor qu\u00e9 econom\u00eda social?",
+    "paragraphs": [
+      "Creo que el verdadero cambio estructural comienza desde el terreno, dentro de las comunidades. No solo en documentos de pol\u00edtica p\u00fablica o promesas electorales, sino en acciones concretas. En ejemplos vivos que demuestran que la econom\u00eda social puede funcionar incluso dentro de un sistema capitalista. Que las cooperativas, las organizaciones sin fines de lucro y las entidades propiedad de los trabajadores pueden ser eficientes, \u00e1giles y servir como alternativas complementarias a los modelos tradicionales, ya sean p\u00fablicos o privados.",
+      "Desde mi perspectiva, la econom\u00eda social dirige los recursos hacia donde generan mayor impacto. Menos costos administrativos innecesarios, estructuras m\u00e1s cercanas a la comunidad y una mayor capacidad de adaptaci\u00f3n a las necesidades reales. Cuando las personas toman las riendas \u2014 ya sea a trav\u00e9s de una cooperativa, una organizaci\u00f3n comunitaria o una entidad sin fines de lucro \u2014 surgen soluciones arraigadas en la realidad. Personas comprometidas que trabajan para resolver desaf\u00edos concretos, impulsadas por el prop\u00f3sito y el impacto directo en sus comunidades."
+    ]
+  },
+  "story": {
+    "title": "Lo personal",
+    "paragraphs": [
+      "Pas\u00e9 a\u00f1os ofreciendo hogar temporal y haciendo voluntariado con organizaciones de rescate de perros \u2014 trabajando cada d\u00eda con perros que hab\u00edan sido maltratados, descuidados o que estaban en riesgo de eutanasia debido a problemas de comportamiento. Hoy estoy iniciando un santuario para perros en la Rep\u00fablica Dominicana.",
+      "Ese trabajo me ense\u00f1\u00f3 algo esencial: las organizaciones que realizan el trabajo real sobre el terreno rara vez tienen los recursos para invertir en herramientas como un sitio web adecuado o sistemas digitales eficientes, porque cada d\u00f3lar y cada hora se destinan directamente a la misi\u00f3n. Y, sin embargo, esas mismas herramientas podr\u00edan multiplicar significativamente su impacto."
+    ]
+  },
+  "closing": {
+    "quote": "Construyo con IA. Mis gastos generales son básicamente café. Eso significa que puedo dar mi tiempo a organizaciones que hacen un trabajo que importa — un proyecto a la vez, misma calidad, sin factura."
+  },
+  "toolkit": {
+    "title": "En qué puedo ayudar",
+    "subtitle": "Las mismas herramientas que construyo para clientes de pago — configuradas y desplegadas para tu organización.",
+    "items": [
+      { "name": "Sitio web", "tooltip": "Un sitio completo construido con el mismo estándar que los proyectos pagos — responsive, rápido, accesible." },
+      { "name": "CRM", "tooltip": "Un sistema de gestión de contactos para seguir miembros, donantes, voluntarios y comunicaciones." },
+      { "name": "Página de donaciones", "tooltip": "Una página de donaciones segura con Stripe, opciones recurrentes y generación de recibos fiscales." },
+      { "name": "Newsletter", "tooltip": "Configuración de campañas de correo — plantillas, gestión de suscriptores y envíos automatizados." },
+      { "name": "Reservas", "tooltip": "Un sistema de citas o reservas de eventos para tu equipo o tu comunidad." },
+      { "name": "Gestión de voluntarios", "tooltip": "Un sistema para registrar, seguir y comunicarte con tus voluntarios." },
+      { "name": "Páginas de eventos", "tooltip": "Páginas de eventos dedicadas con detalles, inscripción y recordatorios." },
+      { "name": "Formularios", "tooltip": "Formularios personalizados para solicitudes, encuestas, comentarios o procesos de admisión." },
+      { "name": "Compartir documentos", "tooltip": "Un portal seguro para compartir documentos con miembros o partes interesadas." },
+      { "name": "Redes sociales", "tooltip": "Conecta tus feeds sociales, agrega botones de compartir e integra contenido." },
+      { "name": "Analítica", "tooltip": "Rastrea visitas, conversiones y engagement para saber qué funciona." }
+    ]
+  },
+  "howItWorks": {
+    "title": "Cómo funciona",
+    "steps": [
+      { "title": "Uno a la vez", "description": "Tomo un solo proyecto de economía social a la vez. Tienes toda mi atención, no un trabajo apresurado en paralelo." },
+      { "title": "Entre proyectos pagos", "description": "El trabajo de economía social se hace entre clientes de pago. No hay fecha fija — pero tampoco hay atajos." },
+      { "title": "Misma calidad", "description": "Recibes el mismo stack, los mismos estándares y el mismo proceso de revisión que los clientes de pago. La única diferencia es la factura." },
+      { "title": "Puede ser complejo", "description": "No se limita a sitios simples. Si tu organización necesita un CRM, una página de donaciones o un portal multilingüe — lo construimos." }
+    ]
+  },
+  "whoThisIsFor": {
+    "title": "Para quién es",
+    "description": "Es para cooperativas, organizaciones sin fines de lucro, organizaciones benéficas y comunitarias que hacen proyectos en los que creo. No todos califican — elijo proyectos donde creo que el trabajo realmente hará una diferencia.",
+    "types": [
+      { "name": "Cooperativas", "description": "Organizaciones propiedad de los trabajadores, impulsadas por la comunidad, que crean valor compartido." },
+      { "name": "Sin fines de lucro", "description": "Organizaciones ágiles que entregan impacto directo sin la burocracia pesada." },
+      { "name": "Organizaciones benéficas", "description": "Organizaciones registradas que hacen trabajo concreto y medible en sus comunidades." },
+      { "name": "Organizaciones comunitarias", "description": "Grupos locales que resuelven problemas reales — rescate animal, ayuda mutua, proyectos de barrio." }
+    ]
+  },
+  "currentProject": {
+    "title": "Proyecto actual",
+    "placeholder": "No hay proyecto activo ahora. Envía tu organización abajo y podrías ser el siguiente.",
+    "comingSoon": "Detalles próximamente."
+  },
+  "waitlist": {
+    "title": "Inscríbete en la lista de espera",
+    "description": "Cuéntame sobre tu organización y lo que necesitas. Revisaré tu solicitud y te avisaré cuando pueda empezar a trabajar.",
+    "orgName": "Nombre de la organización",
+    "orgNamePlaceholder": "ej. Rescate Animal Amanecer",
+    "orgType": "Tipo de organización",
+    "orgTypePlaceholder": "ej. Sin fines de lucro, Cooperativa, etc.",
+    "email": "Correo de contacto",
+    "emailPlaceholder": "tu@organizacion.org",
+    "message": "¿Qué necesitas?",
+    "messagePlaceholder": "Describe tu organización y el proyecto que tienes en mente. Cuanto más detalle, mejor.",
+    "submit": "Enviar a la lista de espera",
+    "submitted": "¡Gracias! Revisaré tu solicitud y te responderé."
+  },
+  "moreInfo": "Más información"
+}
