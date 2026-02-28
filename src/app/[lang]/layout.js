@@ -25,25 +25,30 @@ export default async function LangLayout({ children, params }) {
   const { lang } = await params;
   const common = getTranslations(lang, 'common');
 
+  const homeLabel = t(common, 'sectionNav.home');
+
   // Nav links per page — keyed by route segment
   const navConfig = {
     service: [
-      { label: t(common, 'sectionNav.guarantees'), href: '#guarantees' },
-      { label: t(common, 'sectionNav.pricing'), href: '#pricing' },
-      { label: t(common, 'sectionNav.howItWorks'), href: '#how-it-works' },
-      { label: t(common, 'sectionNav.portfolioPreview'), href: '#portfolio' },
+      { label: homeLabel, href: '#top', icon: 'home' },
+      { label: t(common, 'sectionNav.guarantees'), href: '#guarantees', icon: 'shieldCheck' },
+      { label: t(common, 'sectionNav.pricing'), href: '#pricing', icon: 'tag' },
+      { label: t(common, 'sectionNav.howItWorks'), href: '#how-it-works', icon: 'listOrdered' },
+      { label: t(common, 'sectionNav.portfolioPreview'), href: '#portfolio', icon: 'layoutGrid' },
     ],
     'social-economy': [
-      { label: t(common, 'sectionNav.howItWorks'), href: '#how-it-works' },
-      { label: t(common, 'sectionNav.whoThisIsFor'), href: '#who-this-is-for' },
-      { label: t(common, 'sectionNav.waitlist'), href: '#waitlist' },
+      { label: homeLabel, href: `/${lang}`, icon: 'home' },
+      { label: t(common, 'sectionNav.howItWorks'), href: '#how-it-works', icon: 'listOrdered' },
+      { label: t(common, 'sectionNav.whoThisIsFor'), href: '#who-this-is-for', icon: 'users' },
+      { label: t(common, 'sectionNav.waitlist'), href: '#waitlist', icon: 'clipboardList' },
     ],
     portfolio: [
-      { label: t(common, 'sectionNav.all'), href: '#all' },
-      { label: t(common, 'sectionNav.basic'), href: '#basic' },
-      { label: t(common, 'sectionNav.standard'), href: '#standard' },
-      { label: t(common, 'sectionNav.advanced'), href: '#advanced' },
-      { label: t(common, 'sectionNav.socialEconomy'), href: '#social-economy' },
+      { label: homeLabel, href: `/${lang}`, icon: 'home' },
+      { label: t(common, 'sectionNav.all'), href: '#all', icon: 'grid' },
+      { label: t(common, 'sectionNav.basic'), href: '#basic', icon: 'circle' },
+      { label: t(common, 'sectionNav.standard'), href: '#standard', icon: 'circleDot' },
+      { label: t(common, 'sectionNav.advanced'), href: '#advanced', icon: 'star' },
+      { label: t(common, 'sectionNav.socialEconomy'), href: '#social-economy', icon: 'heart' },
     ],
     start: [],
     login: [],

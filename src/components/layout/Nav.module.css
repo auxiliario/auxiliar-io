@@ -16,7 +16,7 @@
   font-family: 'DM Sans', sans-serif;
   font-size: 0.875rem;
   font-weight: 500;
-  color: var(--text-muted);
+  color: #888;
   text-decoration: none;
   padding: 0.75rem 1rem;
   min-height: 44px;
@@ -28,11 +28,50 @@
 }
 
 .link:hover {
-  color: var(--text);
+  color: #fff;
   text-decoration: none;
 }
 
 .active {
-  color: var(--accent);
-  border-bottom-color: var(--accent);
+  color: #4ade80;
+  border-bottom-color: #4ade80;
+}
+
+.active:hover {
+  color: #4ade80;
+}
+
+/* Icon wrapper — hidden on desktop */
+.iconWrap {
+  display: none;
+}
+
+/* Label — visible on desktop */
+.label {
+  display: inline;
+}
+
+/* ─── Mobile: icons only ─── */
+@media (max-width: 767px) {
+  .nav {
+    justify-content: center;
+    gap: 0;
+  }
+
+  .link {
+    padding: 0.625rem 0.75rem;
+    min-width: 44px;
+    min-height: 44px;
+    justify-content: center;
+  }
+
+  .iconWrap {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .label {
+    display: none;
+  }
 }
