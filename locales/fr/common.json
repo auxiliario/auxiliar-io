@@ -75,6 +75,40 @@
     "switchLang": "Passer \u00e0",
     "moreInfo": "Plus d\u2019infos"
   },
+  "authMenu": {
+    "dashboard": "Tableau de bord",
+    "signOut": "Déconnexion",
+    "signIn": "Connexion"
+  },
+  "dashboard": {
+    "title": "Tableau de bord",
+    "detailTitle": "Détails du projet",
+    "emptyState": "Vous n'avez pas encore de projets.",
+    "untitled": "Projet sans titre",
+    "newProject": "+ Nouveau projet",
+    "backToList": "Retour au tableau de bord",
+    "quoteLabel": "Votre devis",
+    "acceptButton": "Accepter le devis",
+    "declineButton": "Refuser — obtenir un remboursement",
+    "continueButton": "Continuer à remplir",
+    "draftUrlLabel": "Aperçu de votre site",
+    "status": {
+      "in_progress": "En cours",
+      "submitted": "Soumis",
+      "evaluating": "En révision",
+      "approved": "Devis prêt",
+      "declined": "Pas compatible — remboursement émis",
+      "paid": "Construction de votre site"
+    },
+    "statusDescriptions": {
+      "in_progress": "Ce projet est encore en cours de remplissage.",
+      "submitted": "Nous avons reçu votre projet et le révisons.",
+      "evaluating": "Nous révisons actuellement les détails de votre projet.",
+      "approved": "Votre projet a été approuvé. Consultez et acceptez le devis ci-dessous.",
+      "declined": "Ce projet n'était pas compatible. Un remboursement a été émis.",
+      "paid": "Paiement reçu — nous construisons votre site!"
+    }
+  },
   "login": {
     "title": "Connexion",
     "subtitle": "Connectez-vous pour commencer ou continuer votre projet.",

@@ -1,6 +1,8 @@
 import { getTranslations, t } from '../../lib/i18n';
+import { AuthProvider } from '../../lib/auth';
 import Header from '../../components/layout/Header';
 import Footer from '../../components/layout/Footer';
+import MobileBar from '../../components/layout/MobileBar';
 
 export function generateStaticParams() {
   return [{ lang: 'en' }, { lang: 'fr' }, { lang: 'es' }];
@@ -52,14 +54,16 @@ export default async function LangLayout({ children, params }) {
     ],
     start: [],
     login: [],
+    dashboard: [],
     terms: [],
   };
 
   return (
-    <>
-      <Header lang={lang} navConfig={navConfig} a11y={common.accessibility} />
+    <AuthProvider>
+      <Header lang={lang} navConfig={navConfig} a11y={common.accessibility} authT={common.authMenu} />
       <main>{children}</main>
+      <MobileBar lang={lang} />
       <Footer lang={lang} translations={common.footer} />
-    </>
+    </AuthProvider>
   );
 }

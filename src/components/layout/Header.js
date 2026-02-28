@@ -3,10 +3,11 @@
 import { usePathname } from 'next/navigation';
 import styles from './Header.module.css';
 import LangSwitcher from './LangSwitcher';
+import AuthMenu from './AuthMenu';
 import ThemeToggle from './ThemeToggle';
 import Nav from './Nav';
 
-export default function Header({ lang, navConfig, a11y = {} }) {
+export default function Header({ lang, navConfig, a11y = {}, authT = {} }) {
   const pathname = usePathname();
 
   // Determine which page we're on by checking the segment after /[lang]/
@@ -23,6 +24,7 @@ export default function Header({ lang, navConfig, a11y = {} }) {
         </a>
         <div className={styles.rightGroup}>
           <LangSwitcher lang={lang} a11y={a11y} />
+          <AuthMenu lang={lang} t={authT} />
           <ThemeToggle a11y={a11y} />
         </div>
       </div>

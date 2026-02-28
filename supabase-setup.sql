@@ -59,6 +59,7 @@ create table public.submissions (
   step5_data jsonb default '{}',
   tier text,
   quote_amount numeric,
+  draft_url text,
   created_at timestamptz default now(),
   updated_at timestamptz default now()
 );

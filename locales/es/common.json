@@ -75,6 +75,40 @@
     "switchLang": "Cambiar a",
     "moreInfo": "M\u00e1s informaci\u00f3n"
   },
+  "authMenu": {
+    "dashboard": "Panel",
+    "signOut": "Cerrar sesión",
+    "signIn": "Iniciar sesión"
+  },
+  "dashboard": {
+    "title": "Panel",
+    "detailTitle": "Detalles del proyecto",
+    "emptyState": "Aún no tienes proyectos.",
+    "untitled": "Proyecto sin título",
+    "newProject": "+ Nuevo proyecto",
+    "backToList": "Volver al panel",
+    "quoteLabel": "Tu cotización",
+    "acceptButton": "Aceptar cotización",
+    "declineButton": "Rechazar — obtener reembolso",
+    "continueButton": "Seguir llenando",
+    "draftUrlLabel": "Vista previa de tu sitio",
+    "status": {
+      "in_progress": "En curso",
+      "submitted": "Enviado",
+      "evaluating": "En revisión",
+      "approved": "Cotización lista",
+      "declined": "No compatible — reembolso emitido",
+      "paid": "Construyendo tu sitio"
+    },
+    "statusDescriptions": {
+      "in_progress": "Este proyecto aún se está llenando.",
+      "submitted": "Recibimos tu proyecto y lo estamos revisando.",
+      "evaluating": "Estamos revisando los detalles de tu proyecto.",
+      "approved": "Tu proyecto ha sido aprobado. Revisa y acepta la cotización abajo.",
+      "declined": "Este proyecto no fue compatible. Se emitió un reembolso.",
+      "paid": "Pago recibido — ¡estamos construyendo tu sitio!"
+    }
+  },
   "login": {
     "title": "Iniciar sesi\u00f3n",
     "subtitle": "Inicia sesi\u00f3n para empezar o continuar tu proyecto.",

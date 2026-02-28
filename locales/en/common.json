@@ -75,6 +75,40 @@
     "switchLang": "Switch to",
     "moreInfo": "More info"
   },
+  "authMenu": {
+    "dashboard": "Dashboard",
+    "signOut": "Sign out",
+    "signIn": "Sign in"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "detailTitle": "Project details",
+    "emptyState": "You haven't started any projects yet.",
+    "untitled": "Untitled project",
+    "newProject": "+ Start a new project",
+    "backToList": "Back to dashboard",
+    "quoteLabel": "Your quote",
+    "acceptButton": "Accept quote",
+    "declineButton": "Decline — get refund",
+    "continueButton": "Continue filling out",
+    "draftUrlLabel": "Preview your site",
+    "status": {
+      "in_progress": "In progress",
+      "submitted": "Submitted",
+      "evaluating": "Under review",
+      "approved": "Quote ready",
+      "declined": "Not a fit — refund issued",
+      "paid": "Building your site"
+    },
+    "statusDescriptions": {
+      "in_progress": "This project is still being filled out.",
+      "submitted": "We've received your project and are reviewing it.",
+      "evaluating": "We're currently reviewing your project details.",
+      "approved": "Your project has been approved. Review and accept the quote below.",
+      "declined": "This project was not a fit. A refund has been issued.",
+      "paid": "Payment received — we're building your site!"
+    }
+  },
   "login": {
     "title": "Sign in",
     "subtitle": "Sign in to start or continue your project.",

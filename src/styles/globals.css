@@ -35,6 +35,13 @@ body {
   transition: background 0.2s ease, color 0.2s ease;
 }
 
+/* Mobile bottom bar spacing */
+@media (max-width: 767px) {
+  body {
+    padding-bottom: calc(56px + env(safe-area-inset-bottom, 0px));
+  }
+}
+
 /* ============================================
    Typography
    ============================================ */
