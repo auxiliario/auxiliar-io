@@ -24,8 +24,8 @@ export default function Header({ lang, navConfig, a11y = {}, authT = {} }) {
         </a>
         <div className={styles.rightGroup}>
           <LangSwitcher lang={lang} a11y={a11y} />
-          <AuthMenu lang={lang} t={authT} />
           <ThemeToggle a11y={a11y} />
+          <AuthMenu lang={lang} t={authT} />
         </div>
       </div>
       {navLinks.length > 0 && (

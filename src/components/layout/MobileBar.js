@@ -1,77 +1,58 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
-import { useTheme } from '../../lib/theme';
 import { useAuth } from '../../lib/auth';
-import { Home, User, LayoutDashboard, Moon, Sun, Globe } from 'lucide-react';
+import { User } from 'lucide-react';
 import styles from './MobileBar.module.css';
-
-const LANGS = ['fr', 'en', 'es'];
 
 export default function MobileBar({ lang }) {
   const pathname = usePathname();
-  const { theme, toggleTheme, mounted } = useTheme();
   const { user, loading } = useAuth();
 
   const segments = pathname.split('/').filter(Boolean);
   const page = segments[1] || 'service';
 
-  function cycleLang() {
-    const idx = LANGS.indexOf(lang);
-    const next = LANGS[(idx + 1) % LANGS.length];
-    const segs = pathname.split('/');
-    segs[1] = next;
-    document.cookie = `lang=${next};path=/;max-age=${365 * 24 * 60 * 60};SameSite=Lax`;
-    window.location.href = segs.join('/');
-  }
+  if (loading) return null;
 
-  const isDark = !mounted || theme === 'dark';
-  const isHome = !segments[1] || page === 'service';
+  if (user) {
+    const avatarUrl = user.user_metadata?.avatar_url;
+    const name = user.user_metadata?.full_name || user.user_metadata?.name || user.email || '';
+    const initial = name.charAt(0).toUpperCase() || '?';
+    const isActive = page === 'dashboard';
 
-  return (
-    <nav className={styles.bar} aria-label="Mobile navigation">
-      <a
-        href={`/${lang}`}
-        className={`${styles.item} ${isHome ? styles.active : ''}`}
-        aria-label="Home"
-      >
-        <Home size={20} strokeWidth={2} />
-      </a>
-
-      {!loading && user ? (
+    return (
+      <div className={styles.bar}>
         <a
           href={`/${lang}/dashboard`}
-          className={`${styles.item} ${page === 'dashboard' ? styles.active : ''}`}
+          className={`${styles.fab} ${isActive ? styles.active : ''}`}
           aria-label="Dashboard"
         >
-          <LayoutDashboard size={20} strokeWidth={2} />
+          {avatarUrl ? (
+            <img
+              src={avatarUrl}
+              alt=""
+              className={styles.avatar}
+              referrerPolicy="no-referrer"
+            />
+          ) : (
+            <span className={styles.initial}>{initial}</span>
+          )}
         </a>
-      ) : (
-        <a
-          href={`/${lang}/login`}
-          className={`${styles.item} ${page === 'login' ? styles.active : ''}`}
-          aria-label="Sign in"
-        >
-          <User size={20} strokeWidth={2} />
-        </a>
-      )}
+      </div>
+    );
+  }
 
-      <button
-        className={styles.item}
-        onClick={toggleTheme}
-        aria-label={isDark ? 'Switch to light theme' : 'Switch to dark theme'}
-      >
-        {isDark ? <Moon size={20} strokeWidth={2} /> : <Sun size={20} strokeWidth={2} />}
-      </button>
+  const isActive = page === 'login';
 
-      <button
-        className={styles.item}
-        onClick={cycleLang}
-        aria-label={`Language: ${lang.toUpperCase()}`}
+  return (
+    <div className={styles.bar}>
+      <a
+        href={`/${lang}/login`}
+        className={`${styles.fab} ${isActive ? styles.active : ''}`}
+        aria-label="Sign in"
       >
-        <Globe size={20} strokeWidth={2} />
-        <span className={styles.langBadge}>{lang}</span>
-      </button>
-    </nav>
+        <User size={20} strokeWidth={2} />
+      </a>
+    </div>
   );
 }

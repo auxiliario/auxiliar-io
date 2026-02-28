@@ -4,59 +4,63 @@
 
 @media (max-width: 767px) {
   .bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    display: block;
     position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    bottom: 1.25rem;
+    right: 1.25rem;
     z-index: 50;
-    height: 56px;
-    background: var(--bg);
-    border-top: 1px solid var(--border);
-    padding: 0 0.5rem;
     padding-bottom: env(safe-area-inset-bottom, 0px);
   }
 
-  .item {
+  .fab {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    width: 44px;
-    height: 44px;
-    border: none;
-    background: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-strong);
     color: #888;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: color 0.15s ease;
     text-decoration: none;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+    transition: color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
   }
 
-  .item:hover {
+  .fab:hover {
     color: #fff;
+    border-color: var(--accent);
     text-decoration: none;
+    transform: scale(1.05);
   }
 
   .active {
     color: #4ade80;
+    border-color: #4ade80;
   }
 
   .active:hover {
     color: #4ade80;
   }
 
-  .langBadge {
-    position: absolute;
-    top: 4px;
-    right: 2px;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.5625rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: var(--text-muted);
-    line-height: 1;
+  .avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .initial {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 600;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

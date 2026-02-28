@@ -35,10 +35,10 @@ body {
   transition: background 0.2s ease, color 0.2s ease;
 }
 
-/* Mobile bottom bar spacing */
+/* Mobile floating auth button clearance */
 @media (max-width: 767px) {
   body {
-    padding-bottom: calc(56px + env(safe-area-inset-bottom, 0px));
+    padding-bottom: calc(1.25rem + 48px + env(safe-area-inset-bottom, 0px));
   }
 }
 
