@@ -1,6 +1,7 @@
 'use client';
 
-import { useReducer, useCallback } from 'react';
+import { useReducer, useCallback, useRef } from 'react';
+import { saveStep } from '../../lib/submissions';
 import Button from '../ui/Button';
 import Step1Business from './Step1Business';
 import Step2Contact from './Step2Contact';
@@ -11,7 +12,7 @@ import styles from './WizardShell.module.css';
 
 const TOTAL_STEPS = 5;
 
-const initialState = {
+const defaultInitialState = {
   step: 1,
   // Step 1
   businessName: '',
@@ -63,12 +64,23 @@ function reducer(state, action) {
   }
 }
 
-export default function WizardShell({ lang, t }) {
-  const [state, dispatch] = useReducer(reducer, initialState);
+export default function WizardShell({ lang, t, userId, submissionId, initialState }) {
+  const [state, dispatch] = useReducer(
+    reducer,
+    initialState ? { ...defaultInitialState, ...initialState } : defaultInitialState
+  );
+  const stateRef = useRef(state);
+  stateRef.current = state;
 
   const setField = useCallback((field, value) => {
     dispatch({ type: 'SET_FIELD', field, value });
   }, []);
+
+  const autoSave = useCallback((step) => {
+    if (submissionId) {
+      saveStep(submissionId, stateRef.current, step).catch(() => {});
+    }
+  }, [submissionId]);
 
   const goToStep = (step) => {
     dispatch({ type: 'SET_STEP', step });
@@ -77,12 +89,14 @@ export default function WizardShell({ lang, t }) {
 
   const goNext = () => {
     if (state.step < TOTAL_STEPS) {
+      autoSave(state.step);
       goToStep(state.step + 1);
     }
   };
 
   const goBack = () => {
     if (state.step > 1) {
+      autoSave(state.step);
       goToStep(state.step - 1);
     }
   };
@@ -127,6 +141,8 @@ export default function WizardShell({ lang, t }) {
           t={t.step3}
           state={state}
           setField={setField}
+          userId={userId}
+          submissionId={submissionId}
         />
       )}
       {state.step === 4 && (
@@ -134,6 +150,8 @@ export default function WizardShell({ lang, t }) {
           t={t.step4}
           state={state}
           setField={setField}
+          userId={userId}
+          submissionId={submissionId}
         />
       )}
       {state.step === 5 && (
@@ -143,6 +161,8 @@ export default function WizardShell({ lang, t }) {
           state={state}
           goToStep={goToStep}
           setField={setField}
+          userId={userId}
+          submissionId={submissionId}
         />
       )}
 

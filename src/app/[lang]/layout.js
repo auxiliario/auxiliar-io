@@ -46,6 +46,7 @@ export default async function LangLayout({ children, params }) {
       { label: t(common, 'sectionNav.socialEconomy'), href: '#social-economy' },
     ],
     start: [],
+    login: [],
     terms: [],
   };
 

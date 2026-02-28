@@ -73,5 +73,37 @@
     "switchToDark": "Switch to dark theme",
     "switchLang": "Switch to",
     "moreInfo": "More info"
+  },
+  "login": {
+    "title": "Sign in",
+    "subtitle": "Sign in to start or continue your project.",
+    "googleButton": "Sign in with Google",
+    "orDivider": "or",
+    "emailLabel": "Email",
+    "emailPlaceholder": "you@example.com",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Your password",
+    "signIn": "Sign in",
+    "signUp": "Create account",
+    "switchToSignUp": "Don't have an account? Create one",
+    "switchToSignIn": "Already have an account? Sign in",
+    "error": "Something went wrong. Please try again."
+  },
+  "submissions": {
+    "title": "Your projects",
+    "untitled": "Untitled project",
+    "continue": "Continue",
+    "view": "View",
+    "newProject": "+ Start a new project",
+    "status": {
+      "in_progress": "In progress",
+      "submitted": "Submitted",
+      "evaluating": "Under review",
+      "approved": "Approved",
+      "declined": "Declined",
+      "paid": "Paid"
+    },
+    "lastUpdated": "Last updated",
+    "step": "Step {step} of 5"
   }
 }

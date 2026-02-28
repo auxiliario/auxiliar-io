@@ -73,5 +73,37 @@
     "switchToDark": "Cambiar a tema oscuro",
     "switchLang": "Cambiar a",
     "moreInfo": "M\u00e1s informaci\u00f3n"
+  },
+  "login": {
+    "title": "Iniciar sesi\u00f3n",
+    "subtitle": "Inicia sesi\u00f3n para empezar o continuar tu proyecto.",
+    "googleButton": "Iniciar sesi\u00f3n con Google",
+    "orDivider": "o",
+    "emailLabel": "Correo",
+    "emailPlaceholder": "tu@ejemplo.com",
+    "passwordLabel": "Contrase\u00f1a",
+    "passwordPlaceholder": "Tu contrase\u00f1a",
+    "signIn": "Iniciar sesi\u00f3n",
+    "signUp": "Crear cuenta",
+    "switchToSignUp": "\u00bfNo tienes cuenta? Crea una",
+    "switchToSignIn": "\u00bfYa tienes cuenta? Inicia sesi\u00f3n",
+    "error": "Algo sali\u00f3 mal. Int\u00e9ntalo de nuevo."
+  },
+  "submissions": {
+    "title": "Tus proyectos",
+    "untitled": "Proyecto sin t\u00edtulo",
+    "continue": "Continuar",
+    "view": "Ver",
+    "newProject": "+ Nuevo proyecto",
+    "status": {
+      "in_progress": "En curso",
+      "submitted": "Enviado",
+      "evaluating": "En revisi\u00f3n",
+      "approved": "Aprobado",
+      "declined": "Rechazado",
+      "paid": "Pagado"
+    },
+    "lastUpdated": "\u00daltima actualizaci\u00f3n",
+    "step": "Paso {step} de 5"
   }
 }

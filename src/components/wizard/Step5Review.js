@@ -1,13 +1,15 @@
 'use client';
 
 import { useState } from 'react';
+import { submitWizard } from '../../lib/submissions';
 import Button from '../ui/Button';
 import styles from './Step5Review.module.css';
 import shellStyles from './WizardShell.module.css';
 
-export default function Step5Review({ lang, t, state, goToStep, setField }) {
+export default function Step5Review({ lang, t, state, goToStep, setField, userId, submissionId }) {
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState('');
 
   const s = t.sections;
   const l = t.labels;
@@ -15,10 +17,24 @@ export default function Step5Review({ lang, t, state, goToStep, setField }) {
 
   async function handleSubmit() {
     setSubmitting(true);
-    // TODO: wire to backend / email
-    await new Promise((r) => setTimeout(r, 800));
-    setSubmitting(false);
-    setSubmitted(true);
+    setSubmitError('');
+
+    if (submissionId) {
+      try {
+        await submitWizard(submissionId, state);
+        setSubmitted(true);
+      } catch (err) {
+        console.error('Submit error:', err);
+        setSubmitError(err.message || 'Something went wrong.');
+      } finally {
+        setSubmitting(false);
+      }
+    } else {
+      // Dev mode (no Supabase) — simulate
+      await new Promise((r) => setTimeout(r, 800));
+      setSubmitting(false);
+      setSubmitted(true);
+    }
   }
 
   function yesNoNotSure(val) {
@@ -174,15 +190,18 @@ export default function Step5Review({ lang, t, state, goToStep, setField }) {
 
       <div className={styles.submitRow}>
         {submitted ? (
-          <div className={styles.submittedMsg}>{t.submitted || 'Thank you! We\u2019ll be in touch.'}</div>
+          <div className={styles.submittedMsg}>{t.submitted}</div>
         ) : (
-          <Button
-            full
-            disabled={!state.agreedToTerms || submitting}
-            onClick={handleSubmit}
-          >
-            {submitting ? '...' : t.submitButton}
-          </Button>
+          <>
+            {submitError && <p className={styles.errorMsg}>{submitError}</p>}
+            <Button
+              full
+              disabled={!state.agreedToTerms || submitting}
+              onClick={handleSubmit}
+            >
+              {submitting ? '...' : t.submitButton}
+            </Button>
+          </>
         )}
       </div>
     </div>

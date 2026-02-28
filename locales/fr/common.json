@@ -73,5 +73,37 @@
     "switchToDark": "Passer au th\u00e8me sombre",
     "switchLang": "Passer \u00e0",
     "moreInfo": "Plus d\u2019infos"
+  },
+  "login": {
+    "title": "Connexion",
+    "subtitle": "Connectez-vous pour commencer ou continuer votre projet.",
+    "googleButton": "Se connecter avec Google",
+    "orDivider": "ou",
+    "emailLabel": "Courriel",
+    "emailPlaceholder": "vous@exemple.com",
+    "passwordLabel": "Mot de passe",
+    "passwordPlaceholder": "Votre mot de passe",
+    "signIn": "Se connecter",
+    "signUp": "Cr\u00e9er un compte",
+    "switchToSignUp": "Pas de compte? Cr\u00e9ez-en un",
+    "switchToSignIn": "D\u00e9j\u00e0 un compte? Connectez-vous",
+    "error": "Une erreur est survenue. Veuillez r\u00e9essayer."
+  },
+  "submissions": {
+    "title": "Vos projets",
+    "untitled": "Projet sans titre",
+    "continue": "Continuer",
+    "view": "Voir",
+    "newProject": "+ Nouveau projet",
+    "status": {
+      "in_progress": "En cours",
+      "submitted": "Soumis",
+      "evaluating": "En r\u00e9vision",
+      "approved": "Approuv\u00e9",
+      "declined": "Refus\u00e9",
+      "paid": "Pay\u00e9"
+    },
+    "lastUpdated": "Derni\u00e8re mise \u00e0 jour",
+    "step": "\u00c9tape {step} sur 5"
   }
 }

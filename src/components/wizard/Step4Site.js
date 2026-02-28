@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { uploadFile, deleteFile } from '../../lib/submissions';
 import Button from '../ui/Button';
 import Input from '../ui/Input';
 import Textarea from '../ui/Textarea';
@@ -8,7 +9,7 @@ import UploadZone from '../ui/UploadZone';
 import styles from './Step4Site.module.css';
 import shellStyles from './WizardShell.module.css';
 
-export default function Step4Site({ t, state, setField }) {
+export default function Step4Site({ t, state, setField, userId, submissionId }) {
   const [customPageName, setCustomPageName] = useState('');
   const [showCustomInput, setShowCustomInput] = useState(false);
   const [modalPage, setModalPage] = useState(null);
@@ -38,9 +39,34 @@ export default function Step4Site({ t, state, setField }) {
 
   // ─── Path A: Auto ───
 
-  function addAutoFile(files) {
-    const newEntries = files.map((f) => ({ file: f, description: '' }));
-    setField('autoFiles', [...state.autoFiles, ...newEntries]);
+  async function addAutoFile(files) {
+    if (!userId || !submissionId) {
+      const newEntries = files.map((f) => ({ file: f, description: '' }));
+      setField('autoFiles', [...state.autoFiles, ...newEntries]);
+      return;
+    }
+
+    for (const file of files) {
+      const placeholder = { name: file.name, size: file.size, description: '', uploading: true };
+      setField('autoFiles', [...state.autoFiles, placeholder]);
+
+      try {
+        const { id, storagePath } = await uploadFile({
+          userId,
+          submissionId,
+          file,
+          category: 'auto',
+        });
+        setField('autoFiles',
+          state.autoFiles
+            .filter((f) => f !== placeholder)
+            .concat({ name: file.name, size: file.size, storagePath, fileId: id, uploaded: true, description: '' })
+        );
+      } catch (err) {
+        console.error('Upload failed:', err);
+        setField('autoFiles', state.autoFiles.filter((f) => f !== placeholder));
+      }
+    }
   }
 
   function setAutoFileDesc(index, desc) {
@@ -50,7 +76,11 @@ export default function Step4Site({ t, state, setField }) {
     setField('autoFiles', updated);
   }
 
-  function removeAutoFile(index) {
+  async function removeAutoFile(index) {
+    const file = state.autoFiles[index];
+    if (file?.uploaded && file.fileId) {
+      await deleteFile(file.fileId, file.storagePath).catch(() => {});
+    }
     setField('autoFiles', state.autoFiles.filter((_, i) => i !== index));
   }
 
@@ -129,23 +159,57 @@ export default function Step4Site({ t, state, setField }) {
     });
   }
 
-  function addSectionFiles(page, section, files) {
+  async function addSectionFiles(page, section, files) {
     const pageData = state.pageDetails[page] || { sections: {}, notes: '' };
     const current = pageData.sections?.[section]?.files || [];
-    const newFiles = files.map((f) => ({ file: f, description: '' }));
-    setField('pageDetails', {
-      ...state.pageDetails,
-      [page]: {
-        ...pageData,
-        sections: {
-          ...pageData.sections,
-          [section]: {
-            ...pageData.sections?.[section],
-            files: [...current, ...newFiles],
+
+    if (!userId || !submissionId) {
+      const newFiles = files.map((f) => ({ file: f, description: '' }));
+      setField('pageDetails', {
+        ...state.pageDetails,
+        [page]: {
+          ...pageData,
+          sections: {
+            ...pageData.sections,
+            [section]: {
+              ...pageData.sections?.[section],
+              files: [...current, ...newFiles],
+            },
           },
         },
-      },
-    });
+      });
+      return;
+    }
+
+    for (const file of files) {
+      try {
+        const { id, storagePath } = await uploadFile({
+          userId,
+          submissionId,
+          file,
+          category: 'section',
+          metadata: { page, section },
+        });
+        const entry = { name: file.name, size: file.size, storagePath, fileId: id, uploaded: true, description: '' };
+        const freshPageData = state.pageDetails[page] || { sections: {}, notes: '' };
+        const freshFiles = freshPageData.sections?.[section]?.files || [];
+        setField('pageDetails', {
+          ...state.pageDetails,
+          [page]: {
+            ...freshPageData,
+            sections: {
+              ...freshPageData.sections,
+              [section]: {
+                ...freshPageData.sections?.[section],
+                files: [...freshFiles, entry],
+              },
+            },
+          },
+        });
+      } catch (err) {
+        console.error('Upload failed:', err);
+      }
+    }
   }
 
   function setSectionFileDesc(page, section, fileIndex, desc) {
@@ -165,9 +229,13 @@ export default function Step4Site({ t, state, setField }) {
     });
   }
 
-  function removeSectionFile(page, section, index) {
+  async function removeSectionFile(page, section, index) {
     const pageData = state.pageDetails[page] || { sections: {}, notes: '' };
     const current = pageData.sections?.[section]?.files || [];
+    const file = current[index];
+    if (file?.uploaded && file.fileId) {
+      await deleteFile(file.fileId, file.storagePath).catch(() => {});
+    }
     setField('pageDetails', {
       ...state.pageDetails,
       [page]: {
@@ -244,7 +312,10 @@ export default function Step4Site({ t, state, setField }) {
               {state.autoFiles.map((item, i) => (
                 <div key={i} className={styles.fileEntry}>
                   <div className={styles.fileHeader}>
-                    <span className={styles.fileName}>{item.file.name}</span>
+                    <span className={styles.fileName}>
+                      {item.name || (item.file && item.file.name)}
+                      {item.uploading && ' ...'}
+                    </span>
                     <button
                       type="button"
                       className={styles.removeBtn}
@@ -448,7 +519,8 @@ export default function Step4Site({ t, state, setField }) {
                           <div key={i} className={styles.fileEntry}>
                             <div className={styles.fileHeader}>
                               <span className={styles.fileName}>
-                                {f.file ? f.file.name : f.name}
+                                {f.name || (f.file && f.file.name)}
+                                {f.uploading && ' ...'}
                               </span>
                               <button
                                 type="button"

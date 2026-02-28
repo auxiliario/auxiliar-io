@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { uploadFile, deleteFile } from '../../lib/submissions';
 import ChoiceButton from '../ui/ChoiceButton';
 import UploadZone from '../ui/UploadZone';
 import TooltipIcon from '../ui/TooltipIcon';
@@ -8,8 +9,9 @@ import InspirationInput from './InspirationInput';
 import styles from './Step3LookFeel.module.css';
 import shellStyles from './WizardShell.module.css';
 
-export default function Step3LookFeel({ t, state, setField }) {
+export default function Step3LookFeel({ t, state, setField, userId, submissionId }) {
   const [colorInput, setColorInput] = useState('#4ade80');
+  const [uploading, setUploading] = useState({});
 
   function addColor() {
     if (!state.brandColors.includes(colorInput)) {
@@ -27,6 +29,57 @@ export default function Step3LookFeel({ t, state, setField }) {
     } else {
       setField('vibes', [...state.vibes, vibe]);
     }
+  }
+
+  async function handleFiles(files, category, stateKey) {
+    if (!userId || !submissionId) {
+      // No auth — store raw File objects (dev mode)
+      setField(stateKey, [...state[stateKey], ...files]);
+      return;
+    }
+
+    for (const file of files) {
+      const tempId = `${Date.now()}_${file.name}`;
+      setUploading((prev) => ({ ...prev, [tempId]: true }));
+
+      // Add placeholder immediately
+      const placeholder = { name: file.name, size: file.size, uploading: true };
+      setField(stateKey, [...state[stateKey], placeholder]);
+
+      try {
+        const { id, storagePath } = await uploadFile({
+          userId,
+          submissionId,
+          file,
+          category,
+        });
+        // Replace placeholder with uploaded entry
+        setField(stateKey, (prev) =>
+          // setField doesn't support updater functions, so we read from state directly
+          state[stateKey]
+            .filter((f) => f !== placeholder)
+            .concat({ name: file.name, size: file.size, storagePath, fileId: id, uploaded: true })
+        );
+      } catch (err) {
+        console.error('Upload failed:', err);
+        // Remove placeholder on error
+        setField(stateKey, state[stateKey].filter((f) => f !== placeholder));
+      } finally {
+        setUploading((prev) => {
+          const next = { ...prev };
+          delete next[tempId];
+          return next;
+        });
+      }
+    }
+  }
+
+  async function handleRemoveFile(index, stateKey) {
+    const file = state[stateKey][index];
+    if (file?.uploaded && file.fileId) {
+      await deleteFile(file.fileId, file.storagePath).catch(() => {});
+    }
+    setField(stateKey, state[stateKey].filter((_, j) => j !== index));
   }
 
   return (
@@ -59,24 +112,20 @@ export default function Step3LookFeel({ t, state, setField }) {
                 subtext={t.logoUploadHint}
                 accept="image/*,.svg"
                 multiple
-                onFiles={(files) =>
-                  setField('logoFiles', [...state.logoFiles, ...files])
-                }
+                onFiles={(files) => handleFiles(files, 'logo', 'logoFiles')}
               />
               {state.logoFiles.length > 0 && (
                 <div className={styles.fileList}>
                   {state.logoFiles.map((f, i) => (
                     <div key={i} className={styles.fileItem}>
-                      <span className={styles.fileName}>{f.name}</span>
+                      <span className={styles.fileName}>
+                        {f.name}
+                        {f.uploading && ' ...'}
+                      </span>
                       <button
                         type="button"
                         className={styles.removeBtn}
-                        onClick={() =>
-                          setField(
-                            'logoFiles',
-                            state.logoFiles.filter((_, j) => j !== i)
-                          )
-                        }
+                        onClick={() => handleRemoveFile(i, 'logoFiles')}
                       >
                         ×
                       </button>
@@ -117,24 +166,20 @@ export default function Step3LookFeel({ t, state, setField }) {
                 subtext={t.faviconUploadHint}
                 accept="image/*,.svg,.ico"
                 multiple
-                onFiles={(files) =>
-                  setField('faviconFiles', [...state.faviconFiles, ...files])
-                }
+                onFiles={(files) => handleFiles(files, 'favicon', 'faviconFiles')}
               />
               {state.faviconFiles.length > 0 && (
                 <div className={styles.fileList}>
                   {state.faviconFiles.map((f, i) => (
                     <div key={i} className={styles.fileItem}>
-                      <span className={styles.fileName}>{f.name}</span>
+                      <span className={styles.fileName}>
+                        {f.name}
+                        {f.uploading && ' ...'}
+                      </span>
                       <button
                         type="button"
                         className={styles.removeBtn}
-                        onClick={() =>
-                          setField(
-                            'faviconFiles',
-                            state.faviconFiles.filter((_, j) => j !== i)
-                          )
-                        }
+                        onClick={() => handleRemoveFile(i, 'faviconFiles')}
                       >
                         ×
                       </button>

@@ -142,6 +142,12 @@
   border-radius: 0.75rem;
 }
 
+.errorMsg {
+  font-size: 0.8125rem;
+  color: #ef4444;
+  margin: 0 0 0.75rem;
+}
+
 @media (max-width: 640px) {
   .row {
     grid-template-columns: 1fr;
